@@ -1,8 +1,8 @@
-# Orchestra - V8 Exoskeleton GUI Module
+# Orchestra Exoskeleton GUI Module
 
 **Welcome to the `Orchestra` Exoskeleton Control Station.**
 
-This repository branch/module contains the standalone GUI dashboard used to visualize and control the EULON V8 dual-motor Exoskeleton system. It is built strictly for high-speed, thread-safe asynchronous CAN bus communication.
+This repository branch/module contains the standalone GUI dashboard used to visualize and control the dual-motor Exoskeleton system. It is built strictly for high-speed, thread-safe asynchronous CAN bus communication.
 
 ## 🌟 Core Features
 - **Parallel Loop Monitors**: Side-by-side comparison of **Actual (Rx)** feedback vs **Target (Tx)** setpoints for Position, Velocity, and Torque.
@@ -26,7 +26,7 @@ Because this UI interfaces directly with native Linux SocketCAN, it is highly re
    ```
 3. **Launch the Telemetry Station**:
    ```bash
-   python v8_telemetry_dashboard.py
+   python orchestra_telemetry_dashboard.py
    ```
 *(Requires the `can0` interface to be Up, running at the correct Baud Rate, and terminated with a 120-ohm resistor).*
 
@@ -37,4 +37,4 @@ This module breaks the Python GIL limitations by separating network loops from U
 - `QTimer` Event Loops: Deque-based buffers flush to the screen at a steady 33ms cadence to keep the CPU cool.
 
 ---
-*Developed for the Eulon V8 Exoskeleton Integration Layer.*
+*Developed for the Orchestra Exoskeleton Integration Layer.*

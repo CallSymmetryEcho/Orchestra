@@ -185,7 +185,7 @@ class ExoskeletonDashboard(QMainWindow):
     """Main Application Window"""
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("EULON V8 Exoskeleton - Real-Time Telemetry Dashboard")
+        self.setWindowTitle("Orchestra Exoskeleton - Real-Time Telemetry Dashboard")
         self.setMinimumSize(900, 700)
         
         central_widget = QWidget()
